@@ -1,0 +1,6 @@
+*.joblib
+.aws-sam/
+env.json
+*.pptx
+samconfig.toml
+.ipynb_checkpoints/
