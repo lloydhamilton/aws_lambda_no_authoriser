@@ -13110,7 +13110,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_openml</span>
@@ -13156,7 +13156,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13197,7 +13197,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -13260,7 +13260,7 @@ Average accuracy: 0.9570625000000001
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13332,7 +13332,7 @@ Average accuracy: 0.9570625000000001
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -13742,7 +13742,402 @@ Ensure docker is running.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_features</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pixel1</th>
+      <th>pixel2</th>
+      <th>pixel3</th>
+      <th>pixel4</th>
+      <th>pixel5</th>
+      <th>pixel6</th>
+      <th>pixel7</th>
+      <th>pixel8</th>
+      <th>pixel9</th>
+      <th>pixel10</th>
+      <th>...</th>
+      <th>pixel775</th>
+      <th>pixel776</th>
+      <th>pixel777</th>
+      <th>pixel778</th>
+      <th>pixel779</th>
+      <th>pixel780</th>
+      <th>pixel781</th>
+      <th>pixel782</th>
+      <th>pixel783</th>
+      <th>pixel784</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>24301</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>52585</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13415</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>28171</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>62085</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>35438</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3431</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>39641</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>29551</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>68803</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>4000 rows × 784 columns</p>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="k">def</span> <span class="nf">show_digits</span><span class="p">(</span><span class="n">pixel_vals</span><span class="p">):</span>
+
+    <span class="n">some_digit_image</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">pixel_vals</span>
+        <span class="o">.</span><span class="n">values</span>
+        <span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">some_digit_image</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s2">&quot;binary&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="n">fours</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="n">train_target</span> <span class="o">==</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">nines</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="n">train_target</span> <span class="o">==</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">eights</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="n">train_target</span> <span class="o">==</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">fives</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="n">train_target</span> <span class="o">==</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">);</span> <span class="n">show_digits</span><span class="p">(</span><span class="n">fours</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">222</span><span class="p">);</span> <span class="n">show_digits</span><span class="p">(</span><span class="n">nines</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">223</span><span class="p">);</span> <span class="n">show_digits</span><span class="p">(</span><span class="n">eights</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">224</span><span class="p">);</span> <span class="n">show_digits</span><span class="p">(</span><span class="n">fives</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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nxE0jidHAAiMIwAExhEAAuMIAIFxBIDAOAJA0F6r1Uq9GJvBE088kbbZs2enrfS2i3/+859p6+7uru9gH0Ppn2F7e3vaxo0bl7ZrrrkmbfPnz6/vYM0r/00d2Jr++1zVnXfembZ58+alrfT9qvq9LF2jWrhwYdrmzJmTttGjR6eNfX+fPTkCQGAcASAwjgAQGEcACIwjAATGEQCClr/KUfLnP/85baeddlradu/e3RfHqeSYY45J20EHHZS2v/zlL2mbNm1a2h5//PG0DR8+PG2DjKscTab05o3p06en7eWXX05b1ascVX9u7NixaVu2bFnaZs2albYW4SoHANTDOAJAYBwBIDCOABAYRwAIjCMABK5yVFT6a9NdXV1pK/1+jxw5Mm1z585NW+mvYk+aNCltb7zxRtouvvjitK1evTptp556atp+85vfpK2tra1tyJBB899qrnLQ1tbW1vbSSy+l7U9/+lOv/3obN25M22233Za2iRMnpm3JkiVpO/vss+s72ODmKgcA1MM4AkBgHAEgMI4AEBhHAAiMIwAErnIU7NixI20jRoxI23333Ze2Bx98MG2//e1v6zpXf7v99tvT9u1vfzttGzZsKH7uscceW/lMDeYqBwPO9ddfn7abb745bV/60pfStnbt2h6daZBwlQMA6mEcASAwjgAQGEcACIwjAATGEQACVzkKSm+ROO+889K2efPmtJXevDF06ND6DjaAnXzyyWk78cQTiz97ww039PZx+oqrHAwqU6ZMSdvu3bvTtm7durQNGzasR2caQFzlAIB6GEcACIwjAATGEQAC4wgAgXEEgKCjvw8wkL333ntpmzBhQto+/elP98VxBoXSm0z+/ve/N+4g0GJWrlyZto0bN6atdCVj27ZtaRs7dmx9BxukPDkCQGAcASAwjgAQGEcACIwjAATGEQACVzkKhg8fnrbOzs60lf7686hRo3pypIbp7u5O24IFC9L2/PPPp+2rX/1qj84E/aH0ZoqXXnopbRdeeGGvn6X0651zzjlpa2/PXyQzbdq0tDX7dY0ST44AEBhHAAiMIwAExhEAAuMIAIFxBIDAVY6CGTNmpK10zaP0f8Av/bXpRuvq6krbtddem7YHHnggbR0d+b9S8+bNq+9gMIDcddddaStdkah6lWPJkiVpW7p0aaWzlNqsWbPqO1iL8eQIAIFxBIDAOAJAYBwBIDCOABAYRwAIXOUoOOCAA9L2jW98I22lt0987WtfS9vUqVPrO1iwZ8+etK1evTptb7zxRtq2bt1a6Szf//7303bkkUdW+kwYqH7+85+nbeTIkWm7+eab01ar1dJWupJR+rnp06enbe7cuWlrZZ4cASAwjgAQGEcACIwjAATGEQAC4wgAgXEEgKC9dDemra2tGFvZzp0703bWWWel7Zlnnun1s1S9F1VSeiXXzJkz03bfffelrfQ6q0Gm2m9q//N9ruCKK65IW+l1Vn1xX7H0c6U/d2677ba0jR07Nm0tYp+/qZ4cASAwjgAQGEcACIwjAATGEQAC4wgAgascfeDdd99N2y233JK29evXp23Tpk1pe+edd9I2ceLEtJVekXXppZemzV/9dpWjlaxcuTJtl1xySdp2796dtqpXORYtWpS2m266KW0UucoBAPUwjgAQGEcACIwjAATGEQAC4wgAgasc8PG5ykFbW1tb2yOPPJK25cuXp610xWrUqFFpu+6669I2bNiwtFHkKgcA1MM4AkBgHAEgMI4AEBhHAAiMIwAErnLAx+cqBzQPVzkAoB7GEQAC4wgAgXEEgMA4AkBgHAEgMI4AEBhHAAiMIwAExhEAAuMIAIFxBIDAOAJAYBwBIDCOABAYRwAIjCMABMYRAALjCACBcQSAoOMjentDTgE0gu8z1MmTIwAExhEAAuMIAIFxBIDAOAJAYBwBIPg/cbyHIUtBkNIAAAAASUVORK5CYII="
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -13762,8 +14157,8 @@ Ensure docker is running.</p>
 <span class="p">}</span>
 
 <span class="c1"># Main code for post HTTP request</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://fi3r4ug9gb.execute-api.eu-west-2.amazonaws.com/dev/predict&quot;</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://qjiim4z1db.execute-api.eu-west-2.amazonaws.com/dev/predict&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
 <span class="n">lambda_predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 <span class="n">show_cm</span><span class="p">(</span><span class="n">test_target</span><span class="p">,</span> <span class="n">lambda_predictions</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </pre></div>
@@ -13807,32 +14202,13 @@ Ensure docker is running.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert deploying_lambda.ipynb --to html --template classic
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook deploying_lambda.ipynb to html
-[NbConvertApp] Writing 395161 bytes to deploying_lambda.html
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
